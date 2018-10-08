@@ -15,3 +15,7 @@ test("inputs 2 numbers into the Add function", () => {
 test("inputs 10 numbers into the Add function", () => {
     expect(calculator("1,2,3,4,5,6,7,8,9,10")).toBe(55);
 });
+
+test("inputs a negative number into the Add function", () => {
+    expect(calculator("-1,-2,-3")).toBe();
+});
