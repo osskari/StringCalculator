@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "main": "StringCalculator.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osskari/StringCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osskari/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/osskari/StringCalculator#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "test": "^0.6.0"
+  }
+}
