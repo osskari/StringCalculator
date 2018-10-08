@@ -23,3 +23,11 @@ test("inputs a negative number into the Add function", () => {
 test("inputs some numbers including some over 1000", () => {
     expect(calculator("1,2,3,4,1001,5,6,1005,7,8,9,10")).toBe(55);
 });
+
+test("inputs a single character delimeter and some numbers", () => {
+    expect(calculator("//!/n1!2!3!4!5")).toBe(15);
+});
+
+test("inputs a stubstring as a delimiter and some numbers", () => {
+    expect(calculator("//delim/n1delim2delim3delim4delim5delim6")).toBe(21);
+});

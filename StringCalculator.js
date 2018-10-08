@@ -3,8 +3,21 @@ function Add(numbers) {
         if(numbers == "") {
             return 0;
         }
-        var separators = [',', '\n'];
-        var a = numbers.split(new RegExp(separators.join('|'), 'g')).map(Number);
+        var delim = "";
+        if(numbers[0] == '/' && numbers[1] == '/'){
+            delim = numbers.substring(2, numbers.indexOf('/n'));
+            numbers = numbers.slice((numbers.indexOf('/n') + 2));
+        }
+        var separators;
+        var a;
+        if(delim == ""){
+            separators = [',', '\n'];
+            a = numbers.split(new RegExp(separators.join('|'), 'g')).map(Number);
+        }
+        else {
+            separators = delim;
+            a = numbers.split(delim).map(Number);
+        }
         var retval = 0;
         var negatives = "";
         for(var i = 0; i < a.length; i++){
