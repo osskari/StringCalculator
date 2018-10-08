@@ -14,7 +14,9 @@ function Add(numbers) {
                 }
                 negatives += (a[i]);
             }
-            retval += a[i];
+            if(a[i] < 1000){
+                retval += a[i];
+            }
         }
         if(negatives.length > 0){
             throw "Negatives not allowed: " + negatives;
