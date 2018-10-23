@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage"
+    "test": "jest --coverage"
   },
   "name": "stringcalculator",
   "version": "1.0.0",
