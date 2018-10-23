@@ -1,6 +1,6 @@
 function Add(numbers) {
     try{
-        if(numbers == "") {
+        if (numbers == "") {
             return 0;
         }
         var delim = "";
@@ -9,7 +9,7 @@ function Add(numbers) {
             numbers = numbers.slice((numbers.indexOf('/n') + 2));
         }
         var separators;
-        var a;
+        var b;
         if(delim == ""){
             separators = [',', '\n'];
             a = numbers.split(new RegExp(separators.join('|'), 'g')).map(Number);
