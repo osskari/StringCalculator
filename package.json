@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "name": "stringcalculator",
   "version": "1.0.0",
@@ -17,7 +18,9 @@
   "homepage": "https://github.com/osskari/StringCalculator#readme",
   "description": "",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "istanbul": "^0.4.5",
+    "jest": "^23.6.0",
+    "nyc": "^13.1.0"
   },
   "dependencies": {
     "test": "^0.6.0"
