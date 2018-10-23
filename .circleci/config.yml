@@ -39,6 +39,20 @@ jobs:
       - run: 
                 name: Test
                 command: npm run test-ci
+      
+      - store_artifacts:
+
+              path: test-results.xml
+              prefix: tests
+
+      - store_artifacts:
+
+              path: coverage
+              prefix: coverage
+
+      - store_test_results:
+
+              path: test_results.xml
 
 dependencies:
   pre:
@@ -46,6 +60,5 @@ dependencies:
 
 general:
   artifacts:
-    - ./coverage
     - "./coverage/lcov-report/"
 
